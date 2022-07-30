@@ -1,11 +1,5 @@
-import { Button } from '@components/atoms/Button';
+import { HomePageLayout } from '@components/templates/home-page-layout';
 
 export default function HomePage() {
-  return (
-    <>
-      <h1>MDX + Next.js</h1>
-      <h3>Look, a button! 👇</h3>
-      <Button>👋 Hello</Button>
-    </>
-  );
+  return <HomePageLayout></HomePageLayout>;
 }

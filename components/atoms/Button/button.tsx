@@ -1,15 +1,18 @@
-import { ReactNode } from 'react';
+import { ComponentProps } from '@/types';
 
 import styles from './styles.module.scss';
 
-interface ButtonProps {
-  children: ReactNode;
+interface ButtonProps extends ComponentProps {
+  text: string;
 }
 
-export default function Button({ children }: ButtonProps) {
+export default function Button({ text, className = '' }: ButtonProps) {
   return (
-    <button type="button" className={styles.defaultButton}>
-      {children}
+    <button
+      type="button"
+      className={[className, styles.defaultButton].join(' ')}
+    >
+      {text}
     </button>
   );
 }

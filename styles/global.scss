@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply flex flex-col w-full justify-start items-center bg-blue-900;
+}
