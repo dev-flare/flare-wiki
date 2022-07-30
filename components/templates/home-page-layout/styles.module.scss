@@ -1,0 +1,19 @@
+.main {
+  @apply w-screen max-w-screen-lg flex flex-col justify-start text-center items-center p-2 text-slate-100;
+}
+
+.logo {
+  @apply text-yellow-600 select-none;
+}
+
+.enterButton {
+  @apply mt-4 text-lg select-none
+  hover:bg-red-700/60 hover:shadow-md hover:shadow-red-500/40 hover:underline hover:font-semibold;
+}
+
+.description {
+  @apply flex flex-col justify-center items-center w-full text-2xl
+   border-blue-100 border-2 selection:bg-red-500/75;
+
+  height: 80vh;
+}
