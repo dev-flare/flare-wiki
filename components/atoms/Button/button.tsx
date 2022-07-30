@@ -6,7 +6,7 @@ interface ButtonProps {
   children: ReactNode;
 }
 
-export default function Button({ children }: ButtonProps): JSX.Element {
+export default function Button({ children }: ButtonProps) {
   return (
     <button type="button" className={styles.defaultButton}>
       {children}
